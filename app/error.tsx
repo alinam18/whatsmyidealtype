@@ -15,7 +15,7 @@ export default function Error({
 
   return (
     <div>
-      <p>Oops! Something went wrong... maybe try refreshing?</p>
+      <p>Try refreshing ~ I think Alina will do that</p>
     </div>
   );
 }
