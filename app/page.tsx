@@ -4,6 +4,7 @@ import { socialLinks } from "./config";
 export default function Page() {
   return (
     <section>
+{/*       
       <a href={socialLinks.twitter} target="_blank">
         <Image
           src="/profile.png"
@@ -14,7 +15,8 @@ export default function Page() {
           height={160}
           priority
         />
-      </a>
+      </a> */}
+
       <h1 className="mb-8 text-2xl font-medium">
         What's My Ideal Type
       </h1>
