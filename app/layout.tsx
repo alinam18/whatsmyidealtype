@@ -82,13 +82,16 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[624px] w-full">
+          <main className="flex-auto w-full flex flex-col px-2 md:px-4">
+
             <Navbar />
             {children}
-            <Footer />
             <Analytics />
             <SpeedInsights />
           </main>
+          <div className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[624px] w-full">
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
