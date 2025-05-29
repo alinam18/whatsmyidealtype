@@ -2,7 +2,7 @@ export const metaData = {
   baseUrl: "https://nextfolio-template.vercel.app/",
   title: "What's My Ideal Type",
   name: "Alina and Josh",
-  ogImage: "/opengraph-image.png",
+  ogImage: "/logo.png",
   description:
     "We will help you find your ideal type",
 };
