@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
-
+import  BlurBackground  from "./components/BlobBackground";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -62,6 +62,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <BlurBackground /> 
           <Navbar />
           <main className="flex-1 flex flex-col w-full">
             {children}
