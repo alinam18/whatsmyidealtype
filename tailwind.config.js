@@ -12,6 +12,19 @@ module.exports = {
           },
         },
       },
+      keyframes: {
+        'blob-move': {
+          '0%, 100%': {
+            transform: 'translate(-50%, 0%) rotate(30deg)',
+          },
+          '50%': {
+            transform: 'translate(10%, 0%) rotate(20deg)',
+          },
+        },
+      },
+      animation: {
+        'blob-move': 'blob-move 14s ease-in-out infinite',
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
