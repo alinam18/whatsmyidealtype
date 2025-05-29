@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -9,9 +10,10 @@ export default function Page() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
           What's My Ideal Type
         </h1>
-        <a href="#" className="underline text-lg sm:text-xl block">
+        <Link href="/introduction" 
+        className="underline text-lg sm:text-xl block">
           Start Here
-        </a>
+        </Link>
       </div>
     </section>
 
