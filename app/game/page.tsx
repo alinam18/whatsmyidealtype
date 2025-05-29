@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function AboutPage() {
+    const [selected, setSelected] = useState<number | null>(null);
+
     return (
       <main className="flex flex-col text-center items-center gap-5">
         <div>
@@ -24,12 +29,22 @@ export default function AboutPage() {
         <div>
             {/* rankings */}
             <div className="flex justify-center items-center gap-5">
-                <button className="px-4 py-2 border-2 rounded-full ">1</button>
+                {/* <button className="px-4 py-2 border-2 rounded-full ">1</button>
                 <button className="px-4 py-2 border-2 rounded-full ">2</button>
                 <button className="px-4 py-2 border-2 rounded-full ">3</button>
                 <button className="px-4 py-2 border-2 rounded-full ">4</button>
-                <button className="px-4 py-2 border-2 rounded-full ">5</button>
-
+                <button className="px-4 py-2 border-2 rounded-full ">5</button> */}
+                {[1, 2, 3, 4, 5].map((rating) => (
+                    <button
+                    key={rating}
+                    className={`px-4 py-2 border-2 rounded-full ${
+                        selected === rating ? "bg-black text-white" : ""
+                    }`}
+                    onClick={() => handleClick(rating)}
+                    >
+                    {rating}
+                    </button>
+                ))}
             </div>
         </div>
 
